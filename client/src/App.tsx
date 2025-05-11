@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Index from "./pages/dashboard/Index"
+import Users from "./pages/dashboard/Users";
 function App() {
 
 
@@ -7,6 +8,9 @@ function App() {
     {
       path:"/dashboard", 
       element:<Index/>,
+      children:[
+        {path:"users", element:<Users/>}
+      ]
     }
   ]);
   return (

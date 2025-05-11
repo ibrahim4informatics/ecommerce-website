@@ -26,7 +26,7 @@ const SideBar:React.FC = ()=>{
         <Box p={4} w={"full"}>
 
         <CustomLink placeholder="dashboard" to="/dashboard" icon={<MdDashboard/>} />
-        <CustomLink placeholder="users" to="/users" icon={<FaRegUser/>} />
+        <CustomLink placeholder="users" to="/dashboard/users" icon={<FaRegUser/>} />
         <CustomLink placeholder="stores" to="/stores" icon={<FaStoreAlt/>} />
         <CustomLink placeholder="products" to="/products" icon={<AiFillProduct/>} />
         <CustomLink placeholder="orders" to="/orders" icon={<TbTruckDelivery/>} />

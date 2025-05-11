@@ -12,7 +12,7 @@ const CustomLink: React.FC<Props> = ({placeholder, to, icon}) => {
     return (
         <Box zIndex={1} pos={"relative"} display={"flex"} alignItems={"center"} gap={2} color={"black"} my={4}>
                 {icon}
-                <NavLink to={to}>{placeholder}</NavLink>
+                <NavLink end to={to}>{placeholder}</NavLink>
             </Box>
     )
 }
